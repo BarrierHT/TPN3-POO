@@ -14,6 +14,4 @@ Trabajo Practico N3 - POO
 
 **- Grupo 10**
 
-Guia para ejecutar los puntos:
-
 -   Link del repositorio: `https://github.com/BarrierHT/TPN3-POO`
