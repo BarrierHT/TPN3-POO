@@ -26,8 +26,8 @@ public class Auto {
 
     public Auto(String model, int yearOfProduction){
 
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
+        this.model = "Peugeot";
+        this.yearOfProduction = 2010;
     }
 
 
