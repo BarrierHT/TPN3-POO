@@ -14,6 +14,8 @@ public abstract class Figura {
 
     public abstract double getPerimeter();
 
-    public abstract String getColor();
+    public String getColor() {
+        return this.color;
+    };
 
 }

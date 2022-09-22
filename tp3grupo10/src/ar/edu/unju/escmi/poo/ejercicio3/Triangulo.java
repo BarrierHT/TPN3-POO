@@ -9,6 +9,14 @@ public class Triangulo extends Figura {
         this.data2 = data2;
     }
 
+    public double getData2() {
+        return data2;
+    }
+
+    public void setData2(double data2) {
+        this.data2 = data2;
+    };
+
     @Override
     public double getArea() {
         return (this.data1 * this.data2) / 2;
@@ -18,11 +26,13 @@ public class Triangulo extends Figura {
     public double getPerimeter() {
         double side = Math.sqrt(Math.pow(this.data1, 2) + Math.pow(this.data2, 2));
         return side * 2 + this.data2;
-    };
+    }
 
     @Override
-    public String getColor() { // ! Conseguir el color en el programa principal (lo pide en consigna)
-        return this.color;
+    public String toString() {
+        return "Triangulo --- : Altura: " + this.data1 + ", Color: " + this.color + ", Base: " + this.data2
+                + ", Área: "
+                + this.getArea() + ", Perímetro: " + this.getPerimeter() + "\n";
     }
 
 }

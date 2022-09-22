@@ -12,8 +12,24 @@ public class Principal {
         int indexShapes = 0;
 
         do {
+
+            System.out.println("1- Crear un círculo");
+            System.out.println("2- Crear un cuadrado");
+            System.out.println("3- Crear un rectángulo");
+            System.out.println("4- Crear un Triangulo");
+            System.out.println("5- Mostrar todas las figuras geométricas");
+            System.out.println("6- Ingrese un color y muestre todas las figuras con ese color");
+            System.out.println("7- Mostrar solo círculos");
+            System.out.println("8- Mostrar solo cuadrados");
+            System.out.println("9- Mostrar solo rectángulos");
+            System.out.println("10- Mostrar solo triángulos");
+            System.out.println("11- Salir");
+
             System.out.println("Ingrese su opcion: ");
             option = scanner.nextInt();
+
+            System.out.println("\n\n");
+
             if (option >= 1 && option <= 4) {
                 if (indexShapes == shapes.length) {
                     System.out.println("No se pueden crear mas figuras");
@@ -50,7 +66,7 @@ public class Principal {
                     double height = scanner.nextDouble();
                     System.out.println("Ingresa el valor de la base del triangulo: ");
                     double base = scanner.nextDouble();
-                    System.out.println("Ingresa el color del rectangulo: ");
+                    System.out.println("Ingresa el color del triangulo: ");
                     String color = scanner.next();
                     Triangulo triangle = new Triangulo(height, color, base);
                     shapes[indexShapes] = triangle;
@@ -60,20 +76,26 @@ public class Principal {
                 if (option == 5) {
                     for (Figura shape : shapes) {
                         if (shape instanceof Figura) {
-                            if (shape instanceof Circulo)
-                                System.out.println("La figura es un circulo, su color es: " + shape.getColor());
+                            System.out.println(shape);
 
-                            if (shape instanceof Cuadrado)
-                                System.out.println("La figura es un cuadrado, su color es: " + shape.getColor());
+                            // if (shape instanceof Circulo)
+                            // System.out.println("La figura es un circulo, su color es: " +
+                            // shape.getColor());
 
-                            if (shape instanceof Rectangulo)
-                                System.out.println("La figura es un rectangulo, su color es: " + shape.getColor());
+                            // if (shape instanceof Cuadrado)
+                            // System.out.println("La figura es un cuadrado, su color es: " +
+                            // shape.getColor());
 
-                            if (shape instanceof Triangulo)
-                                System.out.println("La figura es un triangulo, su color es: " + shape.getColor());
+                            // if (shape instanceof Rectangulo)
+                            // System.out.println("La figura es un rectangulo, su color es: " +
+                            // shape.getColor());
 
-                            System.out.println("Area: " + shape.getArea());
-                            System.out.println("Perimetro: " + shape.getPerimeter());
+                            // if (shape instanceof Triangulo)
+                            // System.out.println("La figura es un triangulo, su color es: " +
+                            // shape.getColor());
+
+                            // System.out.println("Area: " + shape.getArea());
+                            // System.out.println("Perimetro: " + shape.getPerimeter());
                         }
 
                     }
@@ -83,20 +105,22 @@ public class Principal {
                     for (Figura shape : shapes) {
                         if (shape instanceof Figura) {
                             if (shape.getColor().equals(color)) {
-                                if (shape instanceof Circulo)
-                                    System.out.println("La figura es un circulo");
+                                System.out.println(shape);
 
-                                if (shape instanceof Cuadrado)
-                                    System.out.println("La figura es un cuadrado");
+                                // if (shape instanceof Circulo)
+                                // System.out.println("La figura es un circulo");
 
-                                if (shape instanceof Rectangulo)
-                                    System.out.println("La figura es un rectangulo");
+                                // if (shape instanceof Cuadrado)
+                                // System.out.println("La figura es un cuadrado");
 
-                                if (shape instanceof Triangulo)
-                                    System.out.println("La figura es un triangulo ");
+                                // if (shape instanceof Rectangulo)
+                                // System.out.println("La figura es un rectangulo");
 
-                                System.out.println("Area: " + shape.getArea());
-                                System.out.println("Perimetro: " + shape.getPerimeter());
+                                // if (shape instanceof Triangulo)
+                                // System.out.println("La figura es un triangulo ");
+
+                                // System.out.println("Area: " + shape.getArea());
+                                // System.out.println("Perimetro: " + shape.getPerimeter());
                             }
                         }
                     }
@@ -104,9 +128,11 @@ public class Principal {
                     for (Figura shape : shapes) {
                         if (shape instanceof Figura) {
                             if (shape instanceof Circulo) {
-                                System.out.println("Color: " + shape.getColor());
-                                System.out.println("Area: " + shape.getArea());
-                                System.out.println("Perimetro: " + shape.getPerimeter());
+                                // System.out.println("Color: " + shape.getColor());
+                                // System.out.println("Area: " + shape.getArea());
+                                // System.out.println("Perimetro: " + shape.getPerimeter());
+                                System.out.println(shape);
+
                             }
                         }
                     }
@@ -114,9 +140,11 @@ public class Principal {
                     for (Figura shape : shapes) {
                         if (shape instanceof Figura) {
                             if (shape instanceof Cuadrado) {
-                                System.out.println("Color: " + shape.getColor());
-                                System.out.println("Area: " + shape.getArea());
-                                System.out.println("Perimetro: " + shape.getPerimeter());
+                                // System.out.println("Color: " + shape.getColor());
+                                // System.out.println("Area: " + shape.getArea());
+                                // System.out.println("Perimetro: " + shape.getPerimeter());
+                                System.out.println(shape);
+
                             }
                         }
                     }
@@ -124,9 +152,11 @@ public class Principal {
                     for (Figura shape : shapes) {
                         if (shape instanceof Figura) {
                             if (shape instanceof Rectangulo) {
-                                System.out.println("Color: " + shape.getColor());
-                                System.out.println("Area: " + shape.getArea());
-                                System.out.println("Perimetro: " + shape.getPerimeter());
+                                // System.out.println("Color: " + shape.getColor());
+                                // System.out.println("Area: " + shape.getArea());
+                                // System.out.println("Perimetro: " + shape.getPerimeter());
+                                System.out.println(shape);
+
                             }
                         }
                     }
@@ -134,9 +164,11 @@ public class Principal {
                     for (Figura shape : shapes) {
                         if (shape instanceof Figura) {
                             if (shape instanceof Triangulo) {
-                                System.out.println("Color: " + shape.getColor());
-                                System.out.println("Area: " + shape.getArea());
-                                System.out.println("Perimetro: " + shape.getPerimeter());
+                                // System.out.println("Color: " + shape.getColor());
+                                // System.out.println("Area: " + shape.getArea());
+                                // System.out.println("Perimetro: " + shape.getPerimeter());
+                                System.out.println(shape);
+
                             }
                         }
                     }

@@ -17,8 +17,9 @@ public class Cuadrado extends Figura {
     };
 
     @Override
-    public String getColor() { // ! Conseguir el color en el programa principal (lo pide en consigna)
-        return this.color;
+    public String toString() {
+        return "Cuadrado --- Lado 1: " + this.data1 + ", Color: " + this.color + ", Área: "
+                + this.getArea() + ", Perímetro: " + this.getPerimeter() + "\n";
     }
 
 }
