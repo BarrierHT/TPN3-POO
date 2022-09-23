@@ -2,15 +2,15 @@ package ar.edu.unju.escmi.poo.ejercicio2;
 
 public class Profesor extends Persona{
 	
+	public static final int SB = 85000;
+	
 	private long legajo;
 	private	int antiguedad;
-	private int sueldoBasico;
 
 	public Profesor(String nombre, String apellido, long dni, long legajo, int antiguedad) {
 		super(nombre, apellido, dni);
 		this.legajo = legajo;
 		this.antiguedad = antiguedad;
-		this.sueldoBasico = 85000;
 	}
 	
 	//Comportamiento general
@@ -46,12 +46,13 @@ public class Profesor extends Persona{
 	}
 	
 	//En la subclase Profesor cree un método que calcule el sueldo del profesor.
-	public float sueldoProfesor(int sueldo, int antiguedad){
+	public double calcularSueldoProfesor(){
+		double sueldo = 0;
 		
-		if(antiguedad>=5) {
-			sueldo += (sueldo*0.25);
+		if(this.antiguedad>=5) {
+			sueldo = SB + (SB*0.25);
 		}else {
-			sueldo += (sueldo*0.10);
+			sueldo = SB + (SB*0.10);
 		}
 		
 		return sueldo;		
@@ -61,8 +62,8 @@ public class Profesor extends Persona{
 	@Override
 	public String toString() {
 		return "Profesor: " + apellido + ", " + nombre + " DNI: " + dni
-				+ "\n[N° de legajo: " + legajo + ", Años de antiguedad: " + antiguedad + ", Sueldo basico: " + sueldoBasico
-				+ ", Sueldo del profesor: " + sueldoProfesor(sueldoBasico, antiguedad) + "]";
+				+ "\n[N° de legajo: " + legajo + ", Años de antiguedad: " + antiguedad + ", Sueldo basico: " + SB
+				+ ", Sueldo del profesor: " + calcularSueldoProfesor() + "]";
 	}
 	
 }

@@ -84,7 +84,7 @@ public class Alumno extends Persona{
 	}
 	
 	//En la subclase Alumno cree un método que calcule el promedio de notas del alumno.
-	public double promedioNota(int[] nota){
+	public double promediarNota(int[] nota){
 		double promedio = 0, sumaNota = 0;
 		 
 		for(int i = 0;i < 5;i++) {
@@ -100,7 +100,7 @@ public class Alumno extends Persona{
 	public String toString() {
 		return "Alumno: " + apellido + ", " + nombre + " DNI: " + dni
 				+ "\n[N° de libreta universitaria: " + libretaUniversitaria + ", Notas: " + Arrays.toString(nota)
-				+ ", Promedio: " + promedioNota(nota) + "]";
+				+ ", Promedio: " + promediarNota(nota) + "]";
 	}
 	
 }
