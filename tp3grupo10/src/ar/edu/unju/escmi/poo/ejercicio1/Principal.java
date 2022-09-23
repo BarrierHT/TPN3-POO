@@ -38,10 +38,15 @@ public class Principal {
 
             }else if(option == 3){
 
-                String model = "";
-                int yearOfProduction = 0;
+                String patent, color, model;
 
-                Auto tConstructor = new Auto(model, yearOfProduction);
+                scanner.nextLine();
+
+                System.out.println("\nIngrese la patente del auto"); patent = scanner.nextLine(); 
+                System.out.println("\nIngrese el color del auto"); color = scanner.nextLine(); 
+                System.out.println("\nIngrese el modelo del auto"); model = scanner.nextLine();
+
+                Auto tConstructor = new Auto(patent, color, model);
                 System.out.println("\n" + tConstructor.toString());
                 
             }else if(option == 4){

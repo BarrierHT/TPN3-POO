@@ -24,9 +24,12 @@ public class Auto {
         this.yearOfProduction = yearOfProduction;
     }
 
-    public Auto(String model, int yearOfProduction){
-
-        this.model = "Peugeot";
+    public Auto(String patent, String color, String model){
+        
+        this.patent = patent;
+        this.brand = "Peugeot";
+        this.color = color;
+        this.model = model;
         this.yearOfProduction = 2010;
     }
 
@@ -55,6 +58,6 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Patente: " + patent + " Marca: " + brand + " Color: " + color + " Modelo: " + model + " Anio de fabricacion: " + yearOfProduction;
+        return "Patente: " + patent + ", Marca: " + brand + ", Color: " + color + ", Modelo: " + model + ", Anio de fabricacion: " + yearOfProduction;
     }
 }
