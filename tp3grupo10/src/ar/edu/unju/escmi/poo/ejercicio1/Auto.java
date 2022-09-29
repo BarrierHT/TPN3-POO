@@ -79,7 +79,7 @@ public class Auto {
         return "Estoy avanzando";
     }
 
-    public String acelaccelerate(){
+    public String accelerate(){
         return "Estoy acelerando";
     }
 
