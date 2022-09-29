@@ -9,6 +9,7 @@ public abstract class Figura {
         this.data1 = data1;
         this.color = color;
     }
+    
 
     public abstract double getArea();
 

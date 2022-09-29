@@ -12,7 +12,23 @@ public class Profesor extends Persona{
 		this.legajo = legajo;
 		this.antiguedad = antiguedad;
 	}
-	
+		
+	public long getLegajo() {
+		return legajo;
+	}
+
+	public void setLegajo(long legajo) {
+		this.legajo = legajo;
+	}
+
+	public int getAntiguedad() {
+		return antiguedad;
+	}
+
+	public void setAntiguedad(int antiguedad) {
+		this.antiguedad = antiguedad;
+	}
+
 	//Comportamiento general
 	@Override
 	public String hablar() {

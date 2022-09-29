@@ -33,10 +33,49 @@ public class Auto {
         this.yearOfProduction = 2010;
     }
 
+    public String getPatent() {
+		return patent;
+	}
 
+	public void setPatent(String patent) {
+		this.patent = patent;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getYearOfProduction() {
+		return yearOfProduction;
+	}
+
+	public void setYearOfProduction(int yearOfProduction) {
+		this.yearOfProduction = yearOfProduction;
+	}
+    
     //Methods
 
-    public String moveTheCar(){
+	public String moveTheCar(){
         return "Estoy avanzando";
     }
 
