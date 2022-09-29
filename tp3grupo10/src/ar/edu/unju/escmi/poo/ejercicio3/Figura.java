@@ -17,5 +17,17 @@ public abstract class Figura {
     public String getColor() {
         return this.color;
     };
+    
+    public double getData1() {
+        return this.data1;
+    };
 
+    public void setColor(String color) {
+        this.color = color;
+    };
+    
+    public void setData1(double data1) {
+        this.data1 = data1;
+    };
+    
 }
